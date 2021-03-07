@@ -13,11 +13,13 @@ const Home = () => {
     },[])
     return (
         <div>
-            <h1>Number of Friends: {friends.length} </h1>
+            <h1 style={{textAlign: 'center'}}>Number of Friends: {friends.length} </h1>
+            <div className= "home-style">
             {
                 friends.map(friend => <p className = "home-design"><Friend friend = {friend}></Friend></p>)
                 
             }
+            </div>
         </div>
     );
 };

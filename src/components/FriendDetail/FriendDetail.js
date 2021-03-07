@@ -15,8 +15,16 @@ const FriendDetail = () => {
         })
     }, [friendId])
     const {name, email, phone, website} = exactFriend;
+    const friendDetailStyle = {
+        border: '3px solid blue',
+        width: '400px',
+        margin: '0 auto',
+        marginTop : '30px',
+        padding: '20px',
+        textAlign: 'center'
+    }
     return (
-        <div>
+        <div style= {friendDetailStyle}>
             <p>Friends' detail information: {friendId}</p>
             <h3>{name}</h3>
             <p>{email}</p>

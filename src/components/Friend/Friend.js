@@ -12,7 +12,6 @@ const Friend = (props) => {
             <h3>Name: {name}</h3>
             <p>Email: {email}</p>
             <Link to={`/friend/${id}`}><button>Show friend's Id {id}</button></Link>
-            {/* Link or eventHandler add kore o amra dynamically show korte pari */}
             <p><button onClick={()=>handleClick(id)}>Click to show detail</button></p>
             
         </div>
