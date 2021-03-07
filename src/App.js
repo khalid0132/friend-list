@@ -5,9 +5,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+
 } from "react-router-dom";
-import Friend from './components/Friend/Friend';
+// import Friend from './components/Friend/Friend';
 import NoMatch from './components/NoMatch/NoMatch';
 import FriendDetail from './components/FriendDetail/FriendDetail';
 

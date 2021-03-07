@@ -9,8 +9,11 @@ const FriendDetail = () => {
         // console.log(url);
         fetch(url)
         .then(res => res.json())
-        .then(data => setExactFriend(data))
-    }, [])
+        .then(data => {
+            setExactFriend(data)
+            console.log(data)
+        })
+    }, [friendId])
     const {name, email, phone, website} = exactFriend;
     return (
         <div>
